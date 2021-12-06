@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index_style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Le From VietNam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main-functions.js"></script>
+    <style>
+        .film-title {
+            color: #fff;
+            font-family: Arial;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .img-poster{
+            display:block;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body style="min-width: 1500px; background-color:#100e19" onload="onloadPage()">
+    <div class="container">
+        <div class="header">
+            <h1> LE FROM VIETNAM </h1>
+        </div>
+        <div id="nav-bar">
+        </div>
+
+        <div id="main-section">
+            <!--Recommendations-->
+            <div class="big-section">
+                <h2 class="container-header">
+                    Новые филмы
+                </h2>
+                <div class="wrapper">
+                    <section id="section1">
+                        <a onclick="loadNewFilm(1,1)" class="arrow__btn left-arrow">
+                            <p>‹</p>
+                        </a>
+                        <div class="item">
+                            <img class="img-poster" id="new-film1" src="" alt="Describe Image">
+                            <p class="film-title" id="new-film-title1"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="new-film2" src="" alt="Describe Image">
+                            <p class="film-title" id="new-film-title2"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="new-film3" src="" alt="Describe Image">
+                            <p class="film-title" id="new-film-title3"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="new-film4" src="" alt="Describe Image">
+                            <p class="film-title" id="new-film-title4"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="new-film5" src="" alt="Describe Image">
+                            <p class="film-title" id="new-film-title5"></p>
+                        </div>
+                        <a onclick="loadNewFilm(1,2)" class="arrow__btn right-arrow">
+                            <p>›</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+
+            <!--Serial film-->
+            <div class="big-section">
+                <h2 class="container-header">
+                    Сериалы
+                </h2>
+                <div class="wrapper">
+                    <section id="section1">
+                        <a onclick="loadNewFilm(2,1)" class="arrow__btn left-arrow">
+                            <p>‹</p>
+                        </a>
+                        <div class="item">
+                            <img class="img-poster" id="seri-film1" src="" alt="Describe Image">
+                            <p class="film-title" id="seri-film-title1"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="seri-film2" src="" alt="Describe Image">
+                            <p class="film-title" id="seri-film-title2"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="seri-film3" src="" alt="Describe Image">
+                            <p class="film-title" id="seri-film-title3"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="seri-film4" src="" alt="Describe Image">
+                            <p class="film-title" id="seri-film-title4"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="seri-film5" src="" alt="Describe Image">
+                            <p class="film-title" id="seri-film-title5"></p>
+                        </div>
+                        <a onclick="loadNewFilm(2,2)" class="arrow__btn right-arrow">
+                            <p>›</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            <!--kino films-->
+            <div class="big-section">
+                <h2 class="container-header">
+                    Кассовые фильмы
+                </h2>
+                <div class="wrapper">
+                    <section id="section1">
+                        <a onclick="loadNewFilm(3,1)" class="arrow__btn left-arrow">
+                            <p>‹</p>
+                        </a>
+                        <div class="item">
+                            <img class="img-poster" id="cine-film1" src="" alt="Describe Image">
+                            <p class="film-title" id="cine-film-title1"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="cine-film2" src="" alt="Describe Image">
+                            <p class="film-title" id="cine-film-title2"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="cine-film3" src="" alt="Describe Image">
+                            <p class="film-title" id="cine-film-title3"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="cine-film4" src="" alt="Describe Image">
+                            <p class="film-title" id="cine-film-title4"></p>
+                        </div>
+                        <div class="item">
+                            <img class="img-poster" id="cine-film5" src="" alt="Describe Image">
+                            <p class="film-title" id="cine-film-title5"></p>
+                        </div>
+                        <a onclick="loadNewFilm(3,2)" class="arrow__btn right-arrow">
+                            <p>›</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div id="footer-navigator">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

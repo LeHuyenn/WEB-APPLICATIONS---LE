@@ -1,0 +1,31 @@
+.contain{ 
+    width: 1000px;
+    margin: 0 auto; 
+}
+.header{
+    color: rgb(224, 178, 194); 
+    font-size: 20px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1000px;
+    height: 45px ; 
+    border-width: 10px; 
+    border-style: none; 
+}
+.new-list .list-holiday{
+    width: 45.4%; 
+    padding: 2%;
+    float:left;
+    border: 3px solid #ccc;
+}
+.new-list .list-food{
+    width: 45%; 
+    padding: 2%;
+    float:left;
+    border: 3px solid #ccc;
+}
+.new-list .list-travel{
+    width: 45%; 
+    padding: 2%;
+    float:left;
+    border: 3px solid #ccc;
+}

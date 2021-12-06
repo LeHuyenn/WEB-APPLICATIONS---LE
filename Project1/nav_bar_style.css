@@ -1,0 +1,24 @@
+.nav{
+    height: 50px; 
+    width: auto; 
+    background: rgb(224, 178, 194); 
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    float: left; 
+    line-height: 50px; 
+    padding: 0 25px; 
+}
+.menu ul li a{
+    color: white;
+    font-size: 25px; 
+    text-decoration: none;
+}
+.search{
+    float: right; 
+    line-height: 50px;
+    margin: right 25px;
+    width: 15%;
+}

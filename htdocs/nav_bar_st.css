@@ -1,0 +1,121 @@
+.nav{
+    height: 50px;
+    border-bottom: 2px solid #8B879A;
+    
+    /*margin: auto 50px;*/
+}
+
+.menu {
+    float:left;
+    height: 46px;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial;
+    width: 70%;
+    background-color: #100e19;
+}
+
+.dropbtn a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100px;
+}
+
+.dropdown .dropbtn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+}
+
+.menu a:hover, .dropdown:hover .dropbtn{
+    background-color:red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 7px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search {
+    height: 46px;
+    background-color: #100e19;
+    float: left;
+    line-height: 46px;
+    width: 30%;
+}
+
+.show-list-found{
+    list-style: none;
+    margin : 0px;
+    padding: 0px;
+    
+}
+
+.film-found{
+    background-color: rgba(25, 30, 32);
+    width:398px;
+    line-height: 15px;
+    transition: transform .4s;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+    overflow:hidden;
+    border-radius: 2%;
+}
+
+.film-found:hover{
+    background-color: rgba(90, 93, 94);
+}
+
+.film-found-poster{
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+    vertical-align: middle;
+    border:1px solid wheat;
+    border-radius:3%;
+}
+
+.film-found-title{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 13px;
+}

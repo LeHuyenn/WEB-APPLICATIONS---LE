@@ -1,0 +1,33 @@
+.mini-nav-bar{
+    width:50%;
+    float:left;
+}
+
+.contact-bar{
+    width:50%;
+    float:left;
+}
+
+ul li a{
+    color: white;
+    font-size: 25px; 
+    text-decoration: none;
+}
+
+.footer{
+    color: white;
+    height: 300px; 
+    width: auto; 
+    background:rgb(224, 178, 194);
+    top: 50%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.contact h3{
+    margin: 10px;
+}
+
+.icon span{
+    margin:10px;
+}

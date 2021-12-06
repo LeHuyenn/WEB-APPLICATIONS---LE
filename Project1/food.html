@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="holiday_food_travel_style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Food</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function(){
+      $("#footer-navigator").load("footer.html");
+    });
+    $(function(){
+      $("#nav-bar").load("nav_bar.html");
+    });
+
+    function autoScroll(){
+        var id = sessionStorage.getItem("idForScroll");
+        var idForScroll = '#'+id;
+        $(window).scrollTop($(idForScroll).position().top);
+    }
+   </script>
+</head>
+<body style="min-width: 1500px;" onload="autoScroll()">
+    <div class="container">
+        <div class = "header">
+            <h1> LE FROM VIETNAM___FOOD___ </h1>
+        </div>
+        <div id ="nav-bar">
+            
+        </div>
+    </div>
+    
+    <div class="contain">
+        <div class ="food">
+            <br/>
+            <div class ="new-list">
+                <div class="list-food">
+                    <img width="450"  src="img-all/pic 5.jpg"/> 
+                </div>
+                <div class="list-food">
+                    <img width="450" height ="338" src="img-all/pic6.jpg"/> 
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <h1 style="text-align: center; " > Вьетнамская кухня </h1>
+            <div style="font-size: 24px;">
+                Вьетнамская кухня характеризуется использованием рыбного соуса, соевого соуса, риса, свежей зелени, фруктов и овощей. 
+                Вьетнамские рецепты включают широкий набор зелени, в том числе лимонное сорго, мяту, вьетнамскую мяту, листья кориандра и базилика.
+            </div>
+            
+        </div>
+        
+        <div class="beef-noodle-soup">
+            <h2 class="for_searching" id="for_scroll_1" style="font-size: 30px" >Вьетнамские супы Фо Бо</h2>
+            <div style="font-size: 24px;">
+                Фо бо — одна из самых популярных версий супа фо и фактически его синоним. Он состоит из насыщенного мясного бульона, фо-лапши, лука, кинзы, ростков бобовых, базилика и множества специй. 
+                Перец чили, бадьян, анис, корица, гвоздика — это далеко не полный набор приправ для ароматного супа. Всегда горячий и пряный, он не только насыщает, но и придает силы на целый день.
+            </div>
+            <br/>
+            <img width="1000px" src="img-food/pic1.jpeg"/>
+    
+        </div>
+    
+        <div class="spring-rolls"> 
+            <h2 class="for_searching" id="for_scroll_2" style="font-size: 30px">Спринг-Роллы</h2>
+            <div style="font-size: 24px;">
+                Эти блинчики с начинкой представляют собой освежающую замену обычных жареных блюд и стали любимым блюдом всей семьи. 
+                Они великолепны в качестве прохладной летней закуски и восхитительны в одном или обоих соусах.
+            </div>
+            <br/>
+            <img width="1000px" height="600px" src="img-food/pic2.jpg"/>
+        </div>
+    
+        <div class="chung-cake" > 
+            <h2 class="for_searching" id="for_scroll_3" style="font-size: 30px">БаньТььнг</h2>
+            <div style="font-size: 24px;">
+                Баньтьынг — блюдо вьетнамской кухни, пирог из клейкого риса, бобов мунг и свинины. 
+                Его происхождение объясняется в легенде о Ланг Льеу, наследнике шестого хунгвыонга. 
+                Он стал хунгвыонгом благодаря тому, что создал баньтьынг и баньзэй, символизирующих Небо и Землю. 
+            </div>
+            <br/>
+            <img width="1000px" src="img-food/pic3.jpg"> 
+        </div>
+    </div>
+    
+    <div id="footer-navigator">
+
+    </div>
+    
+</body>
+</html>

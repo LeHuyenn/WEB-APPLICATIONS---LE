@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="holiday_food_travel_style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Travel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function(){
+      $("#footer-navigator").load("footer.html");
+    });
+
+    $(function(){
+      $("#nav-bar").load("nav_bar.html");
+    });
+    function autoScroll(){
+        var id = sessionStorage.getItem("idForScroll");
+        var idForScroll = '#'+id;
+        $(window).scrollTop($(idForScroll).position().top);
+    }
+    </script>
+</head>
+<body style="min-width: 1500px;" onload="autoScroll()">
+    <div class="container">
+        <div class = "header">
+            <h1> LE FROM VIETNAM___TRAVEL___ </h1>
+        </div>
+        <div id ="nav-bar">
+        </div>
+    </div>
+    <br/>
+    <div class="contain">
+        <div class="travel">
+            <div class ="new-list">
+                <div class="list-travel">
+                    <img width="450" height="350"  src="img-all/pic7.jpg"/> 
+                </div>
+                <div class="list-travel">
+                    <img width="450" height ="350" src="img-all/pic8.jpg"/> 
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    
+        <div class="hanoi">
+            <h2 class="for_searching" id="for_scroll_7" style="font-size: 30px">Ханой</h2>
+            <div style="font-size: 24px;">
+                Ханой – столица Вьетнама. Он расположенный на берегу Красной реки - одна из самых древних столиц мира, где путешественники могут найти хорошо сохранившиеся колониальные здания, древние пагоды и уникальные музеи в центре города. 
+                Этот французско-колониальный город - отличное место для пеших прогулок. 
+                Он также известен своей восхитительной кухней, яркой ночной жизнью, шелком и изделиями ручной работы, а также многокультурным сообществом, в котором чувствуется влияние Китая, Франции и России.
+            </div>
+            <ul>
+                <li style="font-size: 24px">Площадь: 3 359 км²</li>
+                <li style="font-size: 24px">Дата основания: 1010 г.</li>
+                <li style="font-size: 24px">Местное время: на 4 часа позже московского </li>
+            </ul>
+            <img SRC="img-travel/pic1.jpg"/>
+        </div>
+    
+        <div class="ho-chi-minh">
+            <h2 class="for_searching" id="for_scroll_8" style="font-size: 30px">ХоШиМин</h2>
+            <div style="font-size: 24px;">
+                Хошимин, больше известный как Сайгон, – это город на юге Вьетнама. Он сыграл важнейшую роль во Вьетнамской войне. 
+                Отличительной особенностью Хошимина также стали здания во французском колониальном стиле. 
+                Яркими примерами служат собор Сайгонской Богоматери, полностью построенный из французских материалов, и здание Центрального почтамта XIX века. 
+                Городские улицы, особенно рядом с оживленным рынком Бен-Тхань, заполнены киосками с едой.
+                <br/>
+            </div>
+            <ul>
+                <li style="font-size: 24px">Площадь: 2 061 км²</li>
+                <li style="font-size: 24px">Дата основания: 1698 г.</li>
+                <li style="font-size: 24px">Высота над уровнем моря: 19 м</li>
+                <li style="font-size: 24px">Население: 8,993 миллиона (4 янв. 2019 г.)</li>
+            </ul>
+            <img width="1000px" src="img-travel/pic2.jpg"/>
+        </div>
+    
+        <div class="hoian">
+            <h2 class="for_searching" id="for_scroll_9" style="font-size: 30px">Хойан</h2>
+            <div  style="font-size: 24px;" >
+                Хойан – это прибрежный город в центральной части Вьетнама. Изрезанная каналами историческая часть города очень хорошо сохранилась и отражает разнообразие его архитектуры, на которую повлияли различные эпохи и народы. 
+                В Хойане можно увидеть китайские дома с магазинами на первом этаже, яркие французские колониальные здания, оригинальные узорчатые вьетнамские дома и такие японские постройки, как легендарный Крытый мост с пагодой.
+            </div>
+            <ul >
+                <li style="font-size: 24px">Площадь: 60 км²</li>
+                <li style="font-size: 24px">Население: 152 160 (2018 г.)</li>
+                <li style="font-size: 24px">Дата включения в Список всемирного культурного наследия ЮНЕСКО: 1999 г.</li>
+            </ul>
+            <img width="1000px" src="img-travel/pic3.jpg"/>
+        </div>
+    
+        <div class="da-nang">
+          2  <h2 class="for_searching" id="for_scroll_10" style="font-size: 30px">Да Нанг</h2>
+            <div  style="font-size: 24px;">
+                Дананг – прибрежный город в центральной части Вьетнама, бывший французский порт. Он славится своими песчаными пляжами и служит отправной точкой для посещения холмов Бана, расположенных к западу от города во внутренней части страны.
+                С перевала Хайван открывается прекрасный вид на залив Дананг и Мраморные горы – пять известняковых скал, где расположено несколько пагод и пещер, в которых хранятся буддийские святыни.
+            </div>
+            <ul>
+                <li style="font-size: 24px"> Площадь: 1 285 км² </li>
+                <li style="font-size: 24px"> Население: 1,134 миллиона (2019 г.)</li>
+                <li style="font-size: 24px"> Почтовый индекс: 50000</li>
+            </ul>
+            <img width="1000px" height="500px" src="img-travel/pic4.jpg">
+        </div>
+    </div>
+
+    <div id="footer-navigator">
+
+    </div>
+
+</body>
+</html>

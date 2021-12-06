@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="nav_bar_style.css" />
+    <link rel="import" href="food.html" />
+    <link rel="import" href="travel.html" />
+    <link rel="import" href="holiday.html" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>nav-bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        function searchFunction() {
+            console.log("on search function");
+            callFilePython();
+        }
+
+        function callFilePython(ul) {
+            var server_data = {};
+            var dataResponse = "";
+            var input, filter, a, i, txtValue, id,name, url, urlForParsing;
+            input = document.getElementById('searchInput');
+            //showLog("TEST : " + input.value.charCodeAt(0));
+            filter = input.value.toUpperCase();
+            console.log("on call python");
+            clearDropList();
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:5000/searching",
+                contentType: "application/json; charset=utf-8",
+                dataType: 'json',
+                data: JSON.stringify(server_data),
+                crossDomain: true,
+                success: function (file_content) {
+                    //showLog('Call file python success : ' + JSON.stringify(file_content.data));
+                    ul = handleFormatResponse(file_content.data);
+                    for (var i = 0; i < ul.length; i++) {
+                        //showLog("IN call file python : " + ul[i]);
+                    }
+                    if (input.value == '') {
+                    } else {
+                        for (i = 0; i < ul.length; i++) {
+                            var resultSplit = splitNameAndLink(ul[i]);
+                            name = resultSplit.header;
+                            url = resultSplit.url;
+                            id = resultSplit.id;
+                            //showLog('After split :  name : ' + name + ' url : ' + url);
+                            txtValue = name;
+                            urlForParsing = url+"#" + id;
+                            //showLog("url for parsing : " + urlForParsing);
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                var a = document.createElement("a");
+                                a.setAttribute("href" , urlForParsing );
+                                var text = document.createTextNode(txtValue);
+                                a.appendChild(text);
+                                li=document.createElement("li");
+                                li.setAttribute("style","background-color : gray");
+                                li.appendChild(a);
+                                var element = document.getElementById("forAppendElement");
+                                element.appendChild(li);
+                            }
+                        }
+                    }
+                },
+                error: function (error_text) {
+                    //showLog('Error in calling file python : ' + JSON.stringify(error_text));
+                }
+
+            });
+        }
+        function splitNameAndLink(inputString){
+            var header = "";
+            var url = "";
+            var id = "";
+            var posSlash1=0;
+            var posSlash2=0;
+            var counter =0;
+            for(var i=0;i<inputString.length;i++){
+                if(inputString[i] == "|"){
+                    if(counter == 0){
+                        posSlash1=i;
+                        counter ++;
+                    }else{
+                        posSlash2 = i;
+                    }
+                }
+            }
+            //showLog ("PosSlash1 : " + posSlash1 + " posSlash2 : " + posSlash2);
+            for(var i=0 ; i< posSlash1 ; i++){
+                header = header + inputString[i];
+            }
+            for(var i =posSlash1+1 ; i<posSlash2;i++){
+                url = url+inputString[i];
+            }
+            for(var i= posSlash2+1; i < inputString.length; i++){
+                id = id + inputString[i];
+            }
+            //showLog("Header : " + header + " URL  : " +url + " ID : " + id);
+            return{
+                header,
+                url,
+                id
+            };
+
+        }
+
+        function handleFormatResponse(inputString) {
+            var ul = [];
+            var result = null;
+            result = inputString.split("\n");
+            ul = result;
+            for(var i=0;i<ul.lengthh;i++) {
+                //showLog("UL : [" + i + "] : " + ul[i]);
+            }
+            return ul;
+        }
+
+        function clearDropList() {
+            var ele = document.getElementById("forAppendElement");
+            ele.innerHTML = '';
+        }
+
+        function showLog(input) {
+            var tag = document.createElement("p");
+            var text = document.createTextNode(input);
+            tag.appendChild(text);
+            var element = document.getElementById("new");
+            element.appendChild(tag);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">All</a></li>
+                <li><a href="holiday.html">Holiday</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="travel.html">Travel</a></li>
+
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search..." id="searchInput" onkeyup="searchFunction()">
+            <ul class="showUL" id="forAppendElement">
+            </ul>
+        </div>
+    </div>
+    <!--
+    <h2 class="for_searching" style="font-size: 30px"> Да Нанг </h2>
+    <h2 class="for_searching" style="font-size: 30px"> Хойан </h2>
+    <h2 class="for_searching" style="font-size: 30px">ХоШиМин</h2>
+    <div id="new">
+        <a href = "travel.html">Test</a>
+    </div>-->
+
+</body>

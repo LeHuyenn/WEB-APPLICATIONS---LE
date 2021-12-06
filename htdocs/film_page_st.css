@@ -1,0 +1,63 @@
+#film-page-container {
+    margin: 100px 150px;
+}
+
+.poster-info-container{
+    overflow: hidden;
+}
+
+.haft-part-left {
+    float:left;
+    width: 240px;
+    margin: auto 30px;
+}
+.haft-part-right {
+    float:left;
+    width: 60%;
+    margin: auto 30px;
+}
+
+#film-page-title {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 35px;
+}
+
+.film-page-element {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+#back-button {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#back-button:hover {
+    color: #a0a0a0;
+}
+
+#frame {
+    width: 240px;
+    height: 360px;
+    border: 3px solid #ccc;
+    background: #eee;
+    padding: 15px 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.film-page-frame-content {
+    margin: auto 30px;
+}
+
+#film-page-description{
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 20px;
+}

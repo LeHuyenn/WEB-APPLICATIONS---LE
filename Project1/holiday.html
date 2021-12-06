@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="holiday_food_travel_style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Holiday </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function(){
+      $("#footer-navigator").load("footer.html");
+    });
+    $(function(){
+      $("#nav-bar").load("nav_bar.html");
+    });
+    function autoScroll(){
+        var id = sessionStorage.getItem("idForScroll");
+        var idForScroll = '#'+id;
+        console.log("ID in session : " + id);
+        $(window).scrollTop($(idForScroll).position().top);
+    }
+    </script>
+</head>
+<body style="min-width: 1500px;" onload="autoScroll()">
+    <div class="container">
+        <div class = "header">
+            <h1> LE FROM VIETNAM___HOLIDAY___ </h1>
+        </div>
+        <div id ="nav-bar">
+            
+        </div>
+    
+    </div>
+    <br/>
+    <div class="contain">
+        <div class="holiday">
+            <div class="new-list">
+                <div class ="list-holiday">
+                    <img width="450" height="350" src ="img-all/pic2.jpg"/>
+                </div>
+                <div class ="list-holiday">
+                    <img width="450" height="350" src ="img-all/pic3.jpg"/>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        
+        <div class="tet-holiday" >
+            <h2 class="for_searching" id="for_scroll_4" style="font-size: 30px;">Вьетнамский Новый Год</h2>
+            <div style="font-size: 24px;">
+                Вьетнамский Новый Год. Одним из самых важных и популярных праздников в культуре страны является Вьетнамский Новый Год – Тет (праздник первого утра). 
+                В этот день во Вьетнаме празднуется приход весны, который согласно вьетнамской вариации китайского лунно-солнечного календаря приходится на конец января или начало февраля. 
+                Готовясь к празднику, вьетнамцы убираются в своих домах и готовят специальные праздничные блюда. Новый год во Вьетнаме – это семейный праздник. 
+                Вьетнамцы стараются провести праздник в кругу семьи, поклониться своим предкам, привести их могилы в порядок, посетить родственников и друзей.
+            </div >
+            <d style="font-size: 24px;">Новогодних традиций во Вьетнаме очень много, основные из них:</d>
+            <ul style="font-size: 24px;">
+                <li> поход в гости в первый день нового года, этому посвящен особый ритуал. Вьетнамцы обращают большое внимание на то, кто наносит им визит первым в году, поэтому в первый день нового года никто не приходит в чужой дом без приглашения;</li>
+                <li> традиция дарить детям деньги в красных конвертах;</li>
+                <li> пожелания долголетия пожилым людям; </li>
+                <li> Доброго здоровья</li>
+            </ul>
+            <d style="font-size: 24px;"> Тет можно разделить на три периода: период приготовления к Тет, канун Тет и непосредственно сам Тет.</d>
+            <br/>
+            <br/>
+            <img width="1000px" height="500px" src="img-holiday/pic1.jpg" />
+            <div style="clear:both;"></div>
+        </div>
+    
+        <div class="independence-day" >
+            <h2 class="for_searching" id="for_scroll_5" style="font-size: 30px;">День Независимости Вьетнама</h2>
+            <div style="font-size: 24px;">
+                День Независимости Вьетнама - 2 сентября 1945 года является важной вехой и поворотной точкой в истории Вьетнама – это день провозглашения Демократической Республики Вьетнам. 
+                В этот день на площади Ба Динь в городе Ханой президент Хошимин зачитал Декларацию Независимости, официально провозглашающую независимость от Франции и Японии и суверенитет страны.
+                <br/>
+                2 сентября празднуется как День Национальной Независимости современной Социалистической Республики Вьетнам. 
+                Отличительным признаком праздника является появление вьетнамских флагов повсюду, окрашивающих всю страну в красный и желтый цвета. 
+                Каждый год в этот день на площади Ба Динь проводится марш, в крупных городах Вьетнама можно наблюдать праздничный салют.
+            </div>
+            <br/>
+            <img width="1000px" height="450px" src= "img-holiday/pic2.jpg"/> 
+        </div>
+    
+        <div class="day-of-unification">
+            <h2 class="for_searching" id="for_scroll_6" style="font-size: 30px;">День Объединения (День Победы)</h2>
+            <div style="font-size: 24px;">
+                30 апреля 1975 года Вьетнамская Народная Армия завоевала Сайгон - столицу Южного Вьетнама. 
+                Этот день отмечается как день окончания Вьетнамской войны и последовавшего за ним объединения страны под коммунистической властью. 
+                Сайгон был переименован в Хошимин. Праздник является государственным и отмечается каждый год как день освобождения Вьетнама.
+            </div>
+            <br/>
+            <img width="1000px" height="450px" src="img-holiday/pic3.jpg">
+    
+        </div>
+    </div>
+
+    <div id="footer-navigator">
+
+    </div>
+    
+</body>
+</html>

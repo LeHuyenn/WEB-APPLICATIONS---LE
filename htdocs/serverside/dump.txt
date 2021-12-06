@@ -1,0 +1,36 @@
+
+->Create PDO successfully
+->Create PDO successfully
+->in onload-page.php
+->load command : 2ction
+->In take data functionom db
+->Ready to take data from db
+->take data done
+->take data doneilms[0] : http://localhost/img-seri-film/pic1.jfif
+->film id : 7 films[0] : http://localhost/img-cine-film/pic1.jfiff
+->film id : 15 films[1] : http://localhost/img-cine-film/pic9.jfif
+->film id : 41 films[3] : http://localhost/img-seri-film/pic4.jfif
+->film id : 8 films[1] : http://localhost/img-cine-film/pic2.jfif
+->film id : 42 films[4] : http://localhost/img-seri-film/pic5.jfif
+->film id : 43 films[5] : http://localhost/img-seri-film/pic6.jfif
+->film id : 16 films[2] : http://localhost/img-cine-film/pic10.jfif
+->film id : 17 films[3] : http://localhost/img-cine-film/pic11.jfif
+->film id : 12 films[5] : http://localhost/img-cine-film/pic6.jfiff
+->film id : 45 films[7] : http://localhost/img-seri-film/pic8.jfif
+->film id : 13 films[6] : http://localhost/img-cine-film/pic7.jfiff
+->film id : 22 films[6] : http://localhost/img-cine-film/pic16.jfif
+->film id : 14 films[7] : http://localhost/img-cine-film/pic8.jfiff
+->film id : 47 films[9] : http://localhost/img-seri-film/pic10.jfif
+->film id : 48 films[10] : http://localhost/img-seri-film/pic11.jfif
+->film id : 24 films[8] : http://localhost/img-cine-film/pic18.jfif
+->film id : 26 films[9] : http://localhost/img-cine-film/pic20.jfiff
+->film id : 16 films[9] : http://localhost/img-cine-film/pic10.jfif
+->film id : 27 films[10] : http://localhost/img-cine-film/pic21.jfif
+->film id : 17 films[10] : http://localhost/img-cine-film/pic11.jfif
+->film id : 28 films[11] : http://localhost/img-cine-film/pic22.jfif
+->film id : 29 films[12] : http://localhost/img-cine-film/pic24.jfif
+->return successilms[13] : http://localhost/img-cine-film/pic23.jfif
+->film id : 19 films[12] : http://localhost/img-cine-film/pic13.jfif
+->film id : 20 films[13] : http://localhost/img-cine-film/pic14.jfif
+->film id : 21 films[14] : http://localhost/img-cine-film/pic15.jfif
+->return success
